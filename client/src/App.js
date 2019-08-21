@@ -1,12 +1,12 @@
-// Packages and Libraries
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 //Components
-import Home from './components/Home'
 import Dashboard from './components/Dashboard'
 import Login from './components/Login'
 import Signup from './components/Signup'
-import  ProtectedRoute from './components/ProtectedRoute'
+import ProtectedRoute from './components/ProtectedRoute'
+import RoutineMe from './components/RoutineMe'
+import Routine from './components/Routine'
 //helper functions
 import { login, getProfile, signUp } from './services/apiService'
 //CSS
@@ -85,13 +85,12 @@ signUpUser = async (credentials) => {
     return (
       <div className="App">
   
-        <nav>
-          <div><Link to="/">Home</Link></div>
+        <nav className="links">
           {
             isSignedIn &&
             <div><Link to="/dashboard">Dashboard</Link></div>
-
           }
+          
           {
             !isSignedIn ? (
               <div><Link to="/login">Login</Link></div>
@@ -101,27 +100,45 @@ signUpUser = async (credentials) => {
           
           }
 
-          {!isSignedIn ? (
+          {
+            !isSignedIn ? (
               <div><Link to="/signup">Sign up</Link></div>
             ) : (
               null
             )
           }
+          {
+            !isSignedIn ? (
+              <div className="homepage">
+                <h1>Routine Me</h1>
+                <p>Keep track of your morning routines.</p>
+                <p>View other user's morning routines, as well.</p>
+              </div>
+            ) : (
+                null
+              )
+          }
         </nav>
   
         <main>
-          <Route exact path="/" component={Home} />
-          <ProtectedRoute path="/dashboard" 
-          user={user}
-          component={Dashboard} />
+          <ProtectedRoute 
+            path="/dashboard" 
+            user={user}
+            component={Dashboard} 
+          />
+          
           <Route 
-          path="/login"
-           render={(props) => <Login  {...props} handleLogin={this.loginUser} isSignedIn={isSignedIn}/>} />
-            <Route 
+            path="/login"
+            render={(props) => <Login  {...props} handleLogin={this.loginUser} isSignedIn={isSignedIn}/>} 
+          />
+          <Route 
             path='/signup' 
             render = {(props) => <Signup {...props} handleSignUp={this.signUpUser} isSignedIn={isSignedIn} />}
-             />
+          />
         </main>
+        
+    
+    
           
       </div>
     );

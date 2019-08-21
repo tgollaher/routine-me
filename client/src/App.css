@@ -1,6 +1,7 @@
 .App {
   width: 1028px;
   margin: 0 auto;
+  display: flex;
 }
 
 .App-header {
@@ -16,6 +17,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.links {
+  display: inline;
+}
+.homepage {
+  margin: 30px;
+  align-items: center;
 }
 
 .login-form {
