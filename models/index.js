@@ -19,7 +19,7 @@ else {
   console.log("string hi")
   // Else connect to a local instance of PSQL running on your machine
    db = new Sequelize({
-    database: 'routineme1',
+    database: 'express',
     dialect: 'postgres'
   });
   
