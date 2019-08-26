@@ -28,7 +28,7 @@ passport.use(new JWTStrategy({
         }
 
     } catch(e) {
-        done(error)
+        done(e)
     }
 }))
 
