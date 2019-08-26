@@ -1,5 +1,5 @@
 import axios from 'axios'
-const BASE_URL = process.env.API_URL || 'postgres://sjpdcrvwwxbras:623e0f23bac82032e06460425bf7d56a33b00eb5c1a062496db1f41445d13a52@ec2-54-83-201-84.compute-1.amazonaws.com:5432/dsrlhsusudulu'
+const BASE_URL = process.env.API_URL || 'http://localhost:8001'
 
 const JWT_TOKEN = localStorage.getItem('token')
 
