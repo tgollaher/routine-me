@@ -43,9 +43,9 @@ class CreateRoutine extends React.Component {
             <div className="routines">
                     <h1>What to do:</h1>
                     <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
-                        <label for="startTime">Start Time (am/pm):</label>
+                        <label for="startTime">Start :</label>
                         <input name="startTime" type="text" />
-                        <label for="endTime">End Time (am/pm):</label>
+                        <label for="endTime">End Time :</label>
                         <input name="endTime" type="text" />
                         <label for="description">What to do :</label>
                         <input name="description" type="text" />

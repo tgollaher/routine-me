@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: column;
-    color: black;
-    border:none;
+    color: rgb(20, 2, 2);
+    border:2px solid rgba(0, 0, 0, 0.856);
     padding-left: 0px;
     margin-top: 80px;
-
-    
+    background-color: rgb(209, 12, 12);
+    border-radius:28px;
 }
 
 .peoples-list > ol {
@@ -18,7 +18,7 @@
 
   .create-routine-button {
 
-        background-color: black;
+        background-color: red;
         -moz-border-radius:28px;
         -webkit-border-radius:28px;
         border-radius:28px;

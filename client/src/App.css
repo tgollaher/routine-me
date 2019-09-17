@@ -2,17 +2,17 @@
 .App {
   width: 1028px;
   margin: 0 auto;
-  color: white;
-  font-family: 'Lexend Zetta', sans-serif;
+  color: rgb(226, 25, 25);
+  
 }
 body {
   width: 100%;
   height: 100vh;
   color: #fff;
-  background: #1370FB;
+  background: radial-gradient(ellipse at bottom, #5091DD 0%, #B5D3E7 100%);
   background-size: 400% 400%;
   position: relative;
-  animation: change 12s ease-in infinite;
+  
 
 }
 
@@ -49,7 +49,7 @@ body {
 .login-form {
   padding: 15px;
   width: 400px;
-  border: 1px #eee solid;
+   border: 1px #eee solid; 
 }
 
 .form label {
@@ -90,7 +90,7 @@ nav {
 
 a {
   text-decoration: none;
-  border: white solid 2px;
+  /* border: white solid 2px; */
   padding: 4px;
   
 }
@@ -98,7 +98,7 @@ a {
 
 
 nav button, nav a {
-  color: white;
+  color: rgb(219, 13, 13);
 }
 
 nav button:hover, nav a:hover {

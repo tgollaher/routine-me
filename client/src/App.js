@@ -83,7 +83,7 @@ signUpUser = async (credentials) => {
         <nav>
           {
             isSignedIn &&
-            <div><Link to="/dashboard">Dashboard</Link></div>
+            <div><Link to="/dashboard">Home</Link></div>
 
           }
           {

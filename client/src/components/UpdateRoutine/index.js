@@ -41,11 +41,11 @@ class UpdateRoutine extends React.Component {
             <div className="update-routines">
                 <h1>Update Your todo:</h1>
                     <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
-                        <label for="startTime">Start Time (am/pm):</label>
+                        <label for="startTime">Start</label>
                         <input name="startTime" type="text" />
-                        <label for="endTime">End Time (am/pm):</label>
+                        <label for="endTime">End</label>
                         <input name="endTime" type="text" />
-                        <label for="description">What to do:</label>
+                        <label for="description">What to do</label>
                         <input name="description" type="text" />
                         <div className="submit"><input type = "submit" /></div> 
                     </form>
