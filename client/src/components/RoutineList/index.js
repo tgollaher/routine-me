@@ -67,14 +67,14 @@ class RoutineList extends React.Component {
     render() {
         return( 
         <div>
-            <h1>Welcome to your RoutineMe Dashboard</h1>
+            <h1>Welcome to your Todo Dashboard</h1>
                 <div className="people-list">
                     
                         {this.renderPerson()}
                     
                 </div>
                 <div className= 'button-div'>
-                    <Link className= "create-routine-button" to='/dashboard/create'>Create New Routine</Link>
+                    <Link className= "create-routine-button" to='/dashboard/create'>Create New Todo</Link>
                 </div>
             
         </div>

@@ -39,13 +39,13 @@ class UpdateRoutine extends React.Component {
         if (this.state.updated){return <Redirect to="/dashboard"></Redirect>}
         return (
             <div className="update-routines">
-                <h1>Update Your Routine:</h1>
+                <h1>Update Your todo:</h1>
                     <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
                         <label for="startTime">Start Time (am/pm):</label>
                         <input name="startTime" type="text" />
                         <label for="endTime">End Time (am/pm):</label>
                         <input name="endTime" type="text" />
-                        <label for="description">Activity:</label>
+                        <label for="description">What to do:</label>
                         <input name="description" type="text" />
                         <div className="submit"><input type = "submit" /></div> 
                     </form>

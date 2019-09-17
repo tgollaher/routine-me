@@ -108,9 +108,9 @@ signUpUser = async (credentials) => {
         <div>
         {!isSignedIn ? (
             <div>
-              <h2 className="title">Welcome to RoutineMe</h2>
+              <h2 className="title">Todo</h2>
               <br></br>
-              <h4 className="title-description">Create your own daily routines and compare them to others</h4>
+              <h4 className="title-description">Make your own todo list from scratch</h4>
             </div>
           ) : (
               null

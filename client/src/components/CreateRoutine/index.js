@@ -41,13 +41,13 @@ class CreateRoutine extends React.Component {
         if (this.state.created){return <Redirect to="/dashboard"></Redirect>}
         return (
             <div className="routines">
-                    <h1>Create Your Routine:</h1>
+                    <h1>What to do:</h1>
                     <form onChange={this.handleChange} onSubmit={this.handleSubmit}>
                         <label for="startTime">Start Time (am/pm):</label>
                         <input name="startTime" type="text" />
                         <label for="endTime">End Time (am/pm):</label>
                         <input name="endTime" type="text" />
-                        <label for="description">Activity:</label>
+                        <label for="description">What to do :</label>
                         <input name="description" type="text" />
                         <div className="submit"><input type = "submit" /></div> 
                     </form>
